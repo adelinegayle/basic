@@ -1,0 +1,5 @@
+package com.loader.config;
+
+public class SpringConfigLoader {
+
+}

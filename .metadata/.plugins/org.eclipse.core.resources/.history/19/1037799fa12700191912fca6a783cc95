@@ -1,0 +1,19 @@
+package com.spring.configloader;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 try {
+	            ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(new String[] { "spring-bean.xml" });
+	        } catch (Throwable e) {
+	            System.out.println(e);
+	        }
+		 
+		 SpringConfigLoader scl=new SpringConfigLoader();
+		 System.out.println("\nLoading Properties from Config File during application startup: \n\nSPRING_TUTORIAL: " + springTutorial);
+	        System.out.println("IS_THIS_SPRING_EXAMPLE: " + springExample);
+	        System.out.println("CRUNCHIFY_URL: " + url);
+	}
+}
